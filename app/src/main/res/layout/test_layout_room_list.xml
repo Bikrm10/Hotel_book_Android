@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:backgroundTintMode="src_over"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/roomImage"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.016"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.42"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                android:src="@drawable/testingroom"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/room_sample_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Single Bed Room"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/roomImage"
+                app:layout_constraintStart_toEndOf="@+id/roomImage"
+                app:layout_constraintTop_toTopOf="@+id/roomImage"
+                app:layout_constraintVertical_bias="0.061" />
+
+
+            <TextView
+                android:id="@+id/sample_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35"
+                android:textColor="@color/teal_200"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/roomImage"
+                app:layout_constraintEnd_toEndOf="@+id/room_sample_name"
+                app:layout_constraintHorizontal_bias="0.535"
+                app:layout_constraintStart_toStartOf="@+id/room_sample_name" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="/night"
+                app:layout_constraintBottom_toBottomOf="@+id/sample_price"
+                app:layout_constraintStart_toEndOf="@+id/sample_price"
+                app:layout_constraintTop_toTopOf="@+id/sample_price"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/room_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Type of room"
+                app:layout_constraintEnd_toEndOf="@+id/room_sample_name"
+                app:layout_constraintHorizontal_bias="0.119"
+                app:layout_constraintStart_toStartOf="@+id/room_sample_name"
+                app:layout_constraintTop_toBottomOf="@+id/room_sample_name" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

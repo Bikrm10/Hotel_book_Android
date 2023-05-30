@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">HotelReservationSystem</string>
+    <string name="developer">Developed by Bloopers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="welcome">Welcome to Hotel Life </string>
+    <string name="slogan2">"The fastest way to search hotel for you "</string>
+
+    <string name="register"> Register Now</string>
+    <string name="login">Lets Login</string>
+    <string name="login_down">Start availing the best route for you </string>
+    <string name="register_down">Sign up now and discover the best hotel near you.</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">PhoneNumber</string>
+    <string name="hint_name">Bikash Hujdar</string>
+    <string name="hint_email">hujdarbikash000@gmail.com</string>
+    <string name="hint_phone">+9779810209126</string>
+    <string name="lock_hint">Type Password</string>
+    <string name="agreement">By creating an account you agree to our Terms and Condition "</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="signIn">SIGN IN</string>
+    <string name="busownerTExt">Start sharing your bus information for Travellers</string>
+    <string name="login_with">Or login with</string>
+    <string name="create_accont">Create account ?</string>
+    <string name="home">Home</string>
+    <string name="forget">Forgot Password ?</string>
+    <string name="forgetdown">" Enter your registered email address below to\n  reset new password "</string>
+    <string name="back">Back to Login</string>
+    <string name="otptext">Verify OTP</string>
+    <string name="verify">Enter the OTP code  sent to your email address \n to verify your account</string>
+    <string name="create_password">Create Password</string>
+    <string name="congrartsdown">Your otp has been verified successfully \nCreate new password now</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchialog">Find now</string>
+    <string name="desscription">They were extremely accommodating and allowed us to check in early at like 10am. We got to hotel super early and I didn’t wanna wait. So this was a big plus. The sevice was exceptional as well. Would definitely send a friend there.</string>
+    <string name="datesample">2076/12/3</string>
+    <string name="bookedFragmetdetails">All Booked Rooms Details</string>
+
+    <string-array name="selectors">
+        <item>Single Bed</item>
+        <item>Double Bed </item>
+        <item>Deluxe Double</item>
+
+    </string-array>
+
+    <string-array name="hotelType">
+
+        <item>Luxury Hotel</item>
+        <item>Budget Hotel</item>
+        <item>Business Hotel</item>
+
+    </string-array>
+
+</resources>

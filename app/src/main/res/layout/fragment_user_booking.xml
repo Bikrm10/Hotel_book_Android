@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.UserBookingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/firstConstrian"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/ceckinText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="CheckIn :"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/check_in_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/edittext_background_box"
+                android:padding="10dp"
+                android:text="m/d/y"
+                app:layout_constraintBottom_toBottomOf="@+id/ceckinText"
+                app:layout_constraintStart_toEndOf="@+id/ceckinText"
+                app:layout_constraintTop_toTopOf="@+id/ceckinText" />
+
+            <TextView
+                android:id="@+id/pick_1"
+                android:padding="10dp"
+                android:background="@drawable/home_search_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="pick"
+                app:layout_constraintBottom_toBottomOf="@+id/check_in_date"
+                app:layout_constraintStart_toEndOf="@+id/check_in_date"
+                app:layout_constraintTop_toTopOf="@+id/check_in_date" />
+
+            <TextView
+                android:id="@+id/checkoutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:text="CheckOut:"
+                app:layout_constraintEnd_toEndOf="@+id/ceckinText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ceckinText"
+                app:layout_constraintTop_toBottomOf="@+id/ceckinText" />
+
+            <TextView
+                android:id="@+id/check_out_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/edittext_background_box"
+                android:padding="10dp"
+
+                android:text="m/d/year"
+                app:layout_constraintBottom_toBottomOf="@+id/checkoutText"
+                app:layout_constraintStart_toEndOf="@+id/checkoutText"
+                app:layout_constraintTop_toTopOf="@+id/checkoutText" />
+
+            <TextView
+                android:id="@+id/pick_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/home_search_background"
+                android:text="pick"
+                app:layout_constraintBottom_toBottomOf="@+id/check_out_date"
+                app:layout_constraintStart_toEndOf="@+id/check_out_date"
+                app:layout_constraintTop_toTopOf="@+id/check_out_date" />
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/check_out_date" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pay_card"
+            android:elevation="215dp"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="TotalDays = "
+
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/days_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="x"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/days"
+                    app:layout_constraintStart_toEndOf="@+id/days"
+                    app:layout_constraintTop_toTopOf="@+id/days" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Amount="
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="@+id/days"
+                    app:layout_constraintHorizontal_bias="0.348"
+                    app:layout_constraintStart_toStartOf="@+id/days"
+                    app:layout_constraintTop_toBottomOf="@+id/days" />
+
+                <TextView
+                    android:id="@+id/payable_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:text="2000"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/amount"
+                    app:layout_constraintStart_toEndOf="@+id/amount"
+                    app:layout_constraintTop_toTopOf="@+id/amount"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Book"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

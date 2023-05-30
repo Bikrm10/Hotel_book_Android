@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:foregroundGravity="bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/roomImage"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/testingroom"
+                android:backgroundTint="#50000000"
+                android:backgroundTintMode="src_over"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
+
+
+            <TextView
+
+                android:id="@+id/hotel_name_recommender"
+                android:layout_width="120dp"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom"
+                android:alpha="2.5"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Horizon Hotel Nepal"
+                android:textColor="@color/theme1"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/roomImage"
+                app:layout_constraintStart_toStartOf="@+id/roomImage"
+                app:layout_constraintTop_toBottomOf="@+id/roomImage" />
+
+            <TextView
+                android:id="@+id/hotel__recommender_loaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="America"
+                android:textColor="@color/theme1"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/hotel_name_recommender"
+                app:layout_constraintStart_toStartOf="@+id/hotel_name_recommender"
+                app:layout_constraintTop_toBottomOf="@+id/hotel_name_recommender"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
